@@ -21,7 +21,7 @@
     <link href="{% static "simple-line-icons/css/simple-line-icons.css" %}" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="{% static "css/stylish-portfolio.min.css" %}" rel="stylesheet">
+    <link href="{% static "css/stylish-portfolio.css" %}" rel="stylesheet">
 
   </head>
 
@@ -49,15 +49,18 @@
                         </div>
                   </li>
                   <li class="sidebar-nav-item">
-                    <a class="js-scroll-trigger" href="#contact">Contact</a>
+                    <a class="js-scroll-trigger" href="#">Work Experience</a>
+                  </li>
+                  <li class="sidebar-nav-item">
+                    <a class="js-scroll-trigger" href="#">Resume</a>
                   </li>
                 </ul>
               </nav>
     
 
-    <!-- About -->
-    <section class="content-section bg-light" id="about">
-      <div class="container text-center">
+    <!-- Avatar -->
+    <section class="about-section text-center" id="about">
+      <!-- <div class="container text-center">
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h2>ChihYing Chang / Jill</h2>
@@ -66,16 +69,63 @@
             
           </div>
         </div>
-      </div>
+      </div> -->
+
+            <div class="container floating_content justify-content-md-center"> 
+              <div class="row">
+                  <div class="col">
+                    </div>
+                    <div class="col-6">
+                        <div class="avatar mr-5">
+                            <a href="#">
+                              <img src="{% static "media/avatar.jpg" %}"  alt="Chih-Ying Chang"/>
+                            </a>
+                          </div>
+                        <div class="social-icon-content">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                  <a class="social-link rounded-circle text-white mr-3" style="animation-delay: -4s;" href="#">
+                                    <i class="icon-social-linkedin"></i>
+                                  </a>
+                                </li>
+                                <li class="list-inline-item">
+                                  <a class="social-link rounded-circle text-white mr-3" style="animation-delay: -3s;" href="#">
+                                    <i class="icon-social-github"></i>
+                                  </a>
+                                </li>
+                                <li class="list-inline-item">
+                                  <a class="social-link rounded-circle text-white mr-3" style="animation-delay: -2s;" href="#">
+                                    <i class="icon-social-facebook"></i>
+                                  </a>
+                                </li>
+                              </ul>
+                        </div>
+                      </div>
+                    <div class="col">
+                      </div>
+              </div>
+            </div>
+            
+
+          <h1 class="mb-0">Chih-Ying
+            <span class="text-primary">Jill Chang</span>
+          </h1>
+          <div class="subheading mb-5">
+            Pittsburgh, PA, USA ·
+            <a href="chihying7509@email.com">chihying7509@gmail.com</a>
+          </div>
+         <!--  <p class="lead">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p> -->
+
+        
     </section>
 
      <!-- Portfolio -->
      <section class="content-section" id="portfolio">
             <div class="container">
               <div class="content-section-heading text-center">
-                <h3 class="text-secondary mb-0">ChihYing Chang</h3>
-                <h3 class="text-secondary mb-0">Portfolio</h3>
-                <h2 class="mb-5">Projects</h2>
+                <!-- <h3 class="text-secondary mb-0">ChihYing Chang</h3> -->
+                <p class="mb-0"><strong>Web and Mobile Applications Development</strong></p>
+                <h2 class="text-secondary mb-5">Portfolio</h2>
               </div>
               <div class="row no-gutters">
                 <div class="col-lg-6">
@@ -182,37 +232,6 @@
                           </section>
 
 
-    <!-- Map -->
-    <section id="contact" class="map">
-            <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-            <br/>
-            <small>
-              <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-            </small>
-          </section>
-      
-          <!-- Footer -->
-          <footer class="footer text-center">
-            <div class="container">
-              <ul class="list-inline mb-5">
-                <li class="list-inline-item">
-                  <a class="social-link rounded-circle text-white mr-3" href="#">
-                    <i class="icon-social-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="social-link rounded-circle text-white mr-3" href="#">
-                    <i class="icon-social-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="social-link rounded-circle text-white" href="#">
-                    <i class="icon-social-github"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </footer>
     
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
