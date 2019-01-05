@@ -29,7 +29,7 @@ body {
 }
 
 .content-section-heading h3 {
-  font-size: 1rem;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
@@ -84,13 +84,13 @@ h6 {
   position: fixed;
   z-index: 2;
   right: 0;
-  width: 250px;
+  width: 100%;
   height: 100%;
-  -webkit-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-  -webkit-transform: translateX(250px);
-  transform: translateX(250px);
-  background: #2D2D2D;
+  -webkit-transition: all 1s in 0s;
+  transition: all 1s ease-in-out 0s;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  background: black;
   opacity: 0.7;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -98,10 +98,12 @@ h6 {
 .sidebar-nav {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .sidebar-nav li.sidebar-nav-item a {
@@ -109,11 +111,13 @@ h6 {
   text-decoration: none;
   color: #fff;
   padding: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .sidebar-nav li a:hover {
   text-decoration: none;
-  color: #fff;
+  color: #F9DB57;
   background: rgba(255, 255, 255, 0.2);
 }
 
@@ -123,17 +127,19 @@ h6 {
 }
 
 .sidebar-nav > .sidebar-brand {
-  font-size: 1.2rem;
+  font-size: 2rem;
+  font-weight: bolder;
   background: rgba(52, 58, 64, 0.1);
-  height: 80px;
+  height: 100px;
   line-height: 50px;
+  margin-top: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
 }
 
 .sidebar-nav > .sidebar-brand a {
-  color: #fff;
+  color: #F9DB57;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
@@ -142,8 +148,8 @@ h6 {
 }
 
 #sidebar-wrapper.active {
-  right: 250px;
-  width: 250px;
+  right: 100%;
+  width: 100%;
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
 }
@@ -255,6 +261,11 @@ h6 {
   background: -webkit-linear-gradient(-75deg, #1D809F 0%, white 100%);
   /* background: linear-gradient(135deg, rgb(247, 217, 84) 0%, white 100%); */
 }
+
+.about-section a {
+    text-decoration: none !important;
+}
+
 
 .floating_content {
  height: 450px;
