@@ -349,14 +349,14 @@ we can use the nth-child property of CSS3: */
 /* Zooming the Sticky Notes on Hover and Focus */
 
 .content-section ul li a:hover,ul li a:focus{
-  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  /* -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
   -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
-  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  box-shadow:10px 10px 7px rgba(0,0,0,.7); */
   -webkit-transform: scale(1.25);
   -moz-transform: scale(1.25);
   -o-transform: scale(1.25);
   position:relative;
-  z-index:5;
+  z-index:3;
 }
 
 
