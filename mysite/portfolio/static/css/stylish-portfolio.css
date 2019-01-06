@@ -21,8 +21,8 @@ body {
 .content-section {
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
-  
 }
+
 
 .content-section-heading h2 {
   font-size: 3rem;
@@ -184,8 +184,8 @@ h6 {
   width: 100%;
   margin: 0;
   padding: 10px;
-  background: -moz-linear-gradient(-75deg, #1D809F 0%, white 100%);
-  background: -webkit-linear-gradient(-75deg, #1D809F 0%, white 100%);
+  background: -moz-linear-gradient(-75deg, #1D809F 0%, #FCF288 100%);
+  background: -webkit-linear-gradient(-75deg, #1D809F 0%, #FCF288 100%);
   /* background: linear-gradient(135deg, rgb(247, 217, 84) 0%, white 100%); */
 }
 
@@ -431,17 +431,106 @@ we can use the nth-child property of CSS3: */
 
 
 /*******************/
-/* Portfolio Details */
+/* Porject Details */
 /*******************/
 
-.title {
-  
+.project-content {
+ /*  position: absolute;
+  left: 20%;
+  top: 20%;
+  transform: translate(20%, 20%); */
+  width: 600px;    
+}
+
+.project-content .pic-container {
+  float: left;
+}
+
+.project-content .parent {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.project-content .wrapper {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  position: absolute;
+  overflow: hidden;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+  transition: transform 375ms, width 600ms 100ms, height 375ms;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border: #1D809F solid 1px;
+}
+
+.project-content .wrapper.open {
+  width: 650px;
+  height: 550px;
+  transition: transform 375ms, width 375ms, height 275ms 100ms;
+}
+
+.project-content .wrapper div.content {
+  position: absolute;
+  margin: auto;
+  left: -9999px;
+  right: -9999px;
+  transform-origin: top;
+  width: 650px;
+  transform: scale(0.62);
+  height: 600px;
+  border-radius: 3px;
+  background: #fff;
+  overflow: hidden;
+  transition: transform 375ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.project-content .wrapper.open .content {
+  transform: scale(1);
+}
+
+.project-content .wrapper .img {
+  height: 370px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* .project-content .thumb-1 .img {
+  background-image: url(http://i.imgur.com/UGQA9bu.jpg);
+} */
+
+/* .project-content .thumb-2 .img {
+  background-image: url(https://timesjourneys.files.wordpress.com/2015/11/day9-iran-shirkuh-timesjourneys2.jpg?w=1200&h=550&crop=1);
+}
+
+.project-content .thumb-3 .img {
+  background-image: url(http://cdn-image.travelandleisure.com/sites/default/files/styles/tnl_redesign_article_landing_page/public/1453920892/DUBAI-554088081-ABOVE0116.jpg?itok=dcoZnCrc);
+} */
+
+.project-content .text {
+  padding: 30px;
+}
+
+.project-content .text .line {
+  height: 13px;
+  background: #999;
+  opacity: 0.7;
+  margin-top: 20px;
+}
+
+.project-content .title {
+  width: 80%;
+}
+
+.project-content .subtitle {
+    width: 60%;
 }
 
 
-/*******************/
-/* Porject Details */
-/*******************/
 a {
   color: #1D809F;
 }
