@@ -468,9 +468,30 @@ we can use the nth-child property of CSS3: */
   border: #1D809F solid 1px;
 }
 
+.project-content .mobile-wrapper {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  position: absolute;
+  overflow: hidden;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+  transition: transform 375ms, width 600ms 100ms, height 375ms;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border: #F9DB57 solid 1px;
+}
+
 .project-content .wrapper.open {
   width: 650px;
   height: 550px;
+  transition: transform 375ms, width 375ms, height 275ms 100ms;
+}
+
+.project-content .mobile-wrapper.open {
+  width: 300px;
+  height: 600px;
   transition: transform 375ms, width 375ms, height 275ms 100ms;
 }
 
@@ -489,12 +510,37 @@ we can use the nth-child property of CSS3: */
   transition: transform 375ms cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
+.project-content .mobile-wrapper div.content {
+  position: absolute;
+  margin: auto;
+  left: -9999px;
+  right: -9999px;
+  transform-origin: top;
+  width: 300px;
+  transform: scale(0.75);
+  height: 600px;
+  border-radius: 3px;
+  background: #fff;
+  overflow: hidden;
+  transition: transform 375ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
 .project-content .wrapper.open .content {
+  transform: scale(1);
+}
+
+.project-content .mobile-wrapper.open .content {
   transform: scale(1);
 }
 
 .project-content .wrapper .img {
   height: 370px;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-content .mobile-wrapper .img {
+  height: 500px;
   background-size: cover;
   background-position: center;
 }
